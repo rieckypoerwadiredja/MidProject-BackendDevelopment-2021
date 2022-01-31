@@ -1,0 +1,307 @@
+/* Strated CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Urbanist',
+        sans-serif;
+}
+
+.padding {
+    padding: 0 80px;
+}
+
+
+
+/* -----------------ganti scroll */
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #0d1218;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #fd636b;
+    border-radius: 20px;
+    outline: 1px solid #2d2d3f;
+}
+
+/* ------------------- Navigation --------------------- */
+.nav-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    background-color: transparent;
+    z-index: 10000000000;
+    /* background-color: red; */
+}
+
+/* -----------------logo container */
+.nav-padding {
+    padding-top: 3%;
+}
+
+.logo {
+    position: relative;
+    width: calc(100%/5);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: chocolate; */
+}
+
+.logo img {
+    position: relative;
+    height: 85%;
+    width: auto;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: .5s;
+}
+
+/* ================= LOGO ANIMATION */
+.logo img.active-ani {
+    transform: translateX(0%);
+    opacity: 1;
+    transition: .5s;
+    transition-delay: .5s;
+}
+
+/* ------------nav-list container */
+.nav-list {
+    position: relative;
+    width: calc(100%/2 + 100%/5 *2);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* background-color: orange; */
+}
+
+.nav-list .list {
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 15px;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: .5s;
+}
+
+/* =============== LIST ANIMATION  */
+.nav-list .list.active-ani {
+    transform: translateX(0) !important;
+    opacity: 1;
+    transition: .5s;
+    transition-delay: .3s;
+}
+
+
+/* ------------list hover effect */
+.nav-list .list::after {
+    content: '';
+    position: absolute;
+    bottom: -70%;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition: .3s;
+}
+
+.nav-list .list:hover::after {
+    width: 50%;
+    transition: .3s;
+}
+
+/*saat halaman aktif ksh active*/
+.nav-list .list.active::after {
+    width: 50%;
+}
+
+/* ------------btn-nav container */
+.btn-nav {
+    position: relative;
+    width: calc(100%/5);
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    /* background-color: chartreuse; */
+}
+
+.btn-nav button {
+    position: relative;
+    width: 80%;
+    height: 60%;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fd636b;
+    border-radius: 2px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #fd636b;
+    transition: .3s;
+    transform: scale(0) rotate(180deg);
+    opacity: 0;
+}
+
+/* ==================== BTN ANIMATION */
+.btn-nav button.active-ani {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+    transition: .5s;
+}
+
+/* hover btn navigation */
+.btn-nav button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #e9747a;
+    z-index: -1;
+    transition: .3s;
+}
+
+.btn-nav button:hover::before {
+    width: 100%;
+    transition: .3s;
+}
+
+/* ------------------- Burger icon */
+.burger-icon {
+    display: none;
+}
+
+
+/* --------------------------------- Responsive ---------------------------- */
+
+@media (max-width:900px) {
+    .padding {
+        padding: 0 60px;
+    }
+
+    .nav-list .list {
+        font-size: 13px;
+    }
+
+    .btn-nav button {
+        font-size: 15px;
+    }
+}
+
+@media (max-width:800px) {
+    .padding {
+        padding: 0 60px;
+    }
+
+    .nav-list .list {
+        font-size: 12px;
+    }
+
+    .btn-nav button {
+        font-size: 13px;
+        height: 50%;
+    }
+
+    .logo img {
+        height: 75%;
+    }
+}
+
+@media (max-width:768px) {
+
+    /* ------------------- Burger icon */
+    .container-burger-icon {
+        position: relative;
+        width: 30px;
+        height: 100%;
+        /* background-color: red; */
+        display: flex;
+        align-items: flex-end;
+    }
+
+    /* ======================BURGER ICON ANIMATION */
+    .container-burger-icon .burger-icon.active-ani {
+        opacity: 1;
+        transform: translateX(0);
+        transition: .5s;
+        transition-delay: .5s;
+    }
+
+    .burger-icon.active-ani {
+        display: flex;
+    }
+
+
+    .container-burger-icon .burger-icon,
+    .container-burger-icon .close-icon {
+        position: relative;
+        width: 100%;
+        height: 50%;
+        display: none;
+        flex-direction: column;
+        justify-content: space-evenly;
+        /* background-color: aqua; */
+    }
+
+    .container-burger-icon .burger-icon {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+
+    .burger-icon span,
+    .close-icon span {
+        position: relative;
+        width: 100%;
+        height: 4px;
+        background-color: #fff;
+    }
+
+    .close-icon span:nth-child(1) {
+        position: absolute;
+        transform: rotate(45deg);
+    }
+
+    .close-icon span:nth-child(2) {
+        position: absolute;
+        transform: rotate(-45deg);
+    }
+
+    .close-icon.active,
+    .burger-icon.active {
+        display: flex;
+    }
+
+    /* -------------------- none */
+    .nav-list,
+    .btn-nav {
+        display: none;
+    }
+
+    /* -------------------Perbaikan nav */
+    .nav-bar {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* ------------------- Logo */
+    .logo img {
+        height: 80%;
+    }
+
+}
