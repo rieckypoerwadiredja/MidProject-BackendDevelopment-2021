@@ -62,7 +62,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 [Jason Sebastian Kurniawan](https://github.com/rieckypoerwadiredja)
 
-Project Link: ....
+Project Link: [PROMERS](https://rieckypoerwadiredja.github.io/MidProject-BackendDevelopment-2021/)
 
 
 
