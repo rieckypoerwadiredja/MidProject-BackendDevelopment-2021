@@ -58,9 +58,9 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Riecky Syarief Poerwadiredja - rieckysyarief@gmail.com - [https://github.com/rieckypoerwadiredja]
+[Riecky Syarief Poerwadiredja](https://github.com/rieckypoerwadiredja)
 
-Jason Sebastian Kurniawan- jasonsebastian@gmail.com - [https://github.com/rieckypoerwadiredja]
+[Jason Sebastian Kurniawan](https://github.com/rieckypoerwadiredja)
 
 Project Link: ....
 
