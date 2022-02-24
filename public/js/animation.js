@@ -24,7 +24,7 @@ const sosmeds = document.querySelectorAll('.social-media .sosmed');
 sosmeds.forEach((sosmed, idx) => {
     setTimeout(() => {
         sosmed.classList.add('active-ani');
-    }, (idx * 200) + 400); //dealay per link sosmednya, jd ada jeda 
+    }, (idx * 200) + 400); //dealay per link sosmednya, jd ada jeda
 });
 
 // --------------------------- FORM ANIMATION
@@ -272,3 +272,57 @@ BS
         duration: .5,
         delay: 0.5,
     }, "-=2.2");
+
+
+// ---------------------------------- FOOTER SECTION --------------------------
+
+let FS = gsap.timeline({
+    // yes, we can add it to an entire timeline!
+    scrollTrigger: {
+        trigger: ".footer",
+        start: "top center",
+    }
+});
+
+FS
+    .to("footer .client .top", {
+        y: 0,
+        opacity: 1,
+        duration: .5,
+        delay: 0,
+    }, "-=3")
+
+    .to("footer .client .bottom .partner", {
+        y: 0,
+        opacity: 1,
+        duration: .5,
+        delay: 0,
+    }, "-=2.8")
+
+    .to("footer .col-footer h4", {
+        y: 0,
+        opacity: 1,
+        duration: .5,
+        delay: 0.3,
+    }, "-=2.4")
+
+    .to("footer .col-footer a ", {
+        y: 0,
+        opacity: 1,
+        duration: .5,
+        delay: 0.3,
+    }, "-=2.4")
+
+    .to("footer .line-container .line ", {
+        opacity: 1,
+        width: "100%",
+        duration: .5,
+        delay: 0.3,
+    }, "-=2.2")
+
+    .to("footer .line-container p  ", {
+        y: 0,
+        opacity: 1,
+        duration: .5,
+        delay: 0.3,
+    }, "-=1.8");

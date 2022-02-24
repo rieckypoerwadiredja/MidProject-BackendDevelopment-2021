@@ -1,3 +1,0 @@
-@section('navigation')
-
-@endsection

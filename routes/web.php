@@ -14,11 +14,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('index');
+return view('layouts.app', ['judul' => 'Home']);
 });
 
 Route::get('/login-register', function () {
-    return view('log-reg');
+    return view('layouts.app', ['judul' => 'Login-Register']);
+});
+
+Route::get('/courses', function () {
+    return view('layouts.app', ['judul' => 'Course']);
 });
 
 
