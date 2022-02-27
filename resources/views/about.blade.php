@@ -1,16 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./about/css/style-about.css">
-    <title>About Us</title>
-</head>
-
-<body>
-    <div class="title-container">
+@section('about')
+    <div class="title-container" style="margin-top: 150px">
         <h1>we are training center <br> for programing</h1>
     </div>
 
@@ -88,6 +77,6 @@
             </div>
         </div>
     </div>
-</body>
 
-</html>
+
+@endsection

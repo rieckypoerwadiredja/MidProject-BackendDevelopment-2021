@@ -25,4 +25,9 @@ Route::get('/courses', function () {
     return view('layouts.app', ['judul' => 'Course']);
 });
 
+Route::get('/aboutus', function () {
+    return view('layouts.app', ['judul' => 'About Us']);
+});
+
+
 

@@ -12,8 +12,12 @@
      @yield('course')
 
 @elseif ($judul == 'Login-Register')
-        @include('log-reg')
-        @yield('login')
+    @include('log-reg')
+    @yield('login')
+
+@elseif ($judul == 'About Us')
+    @include('about')
+    @yield('about')
 @else
 
 @endif

@@ -38,6 +38,10 @@
       {{-- course detail css --}}
        {{-- login regis css --}}
       <link rel="stylesheet" href="./login-regis/css/style-login.css">
+    @elseif ($judul == 'About Us')
+    {{-- about us css --}}
+    <link rel="stylesheet" href="./about/css/style-about.css">
+
     @endif
 
 
@@ -60,7 +64,7 @@ assets/owl.carousel.min.css">
         <div class="nav-list nav-padding">
             <a href="/" class="list active">Home Page</a>
             <a href="/courses" class="list">Promers Course</a>
-            <a href="#" class="list">About Us</a>
+            <a href="/aboutus" class="list">About Us</a>
             <a href="#" class="list">User Profile</a>
         </div>
         <div class="btn-nav">
