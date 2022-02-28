@@ -10,9 +10,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/rieckypoerwadiredja/MidProject-BackendDevelopment-2021">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
+ 
 
   <h3 align="center">MidProject-BackendDevelopment-2021</h3>
 </div>
@@ -21,7 +19,6 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://github.com/rieckypoerwadiredja/MidProject-BackendDevelopment-2021)
 
 This is my first time working together. For our project this time we made a web application where everyone can learn programming according to their respective interests.
 
