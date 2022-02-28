@@ -18,6 +18,10 @@
 @elseif ($judul == 'About Us')
     @include('about')
     @yield('about')
+
+@elseif ($judul == 'User')
+    @include('user')
+    @yield('user')
 @else
 
 @endif

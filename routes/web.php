@@ -29,5 +29,9 @@ Route::get('/aboutus', function () {
     return view('layouts.app', ['judul' => 'About Us']);
 });
 
+Route::get('/user', function () {
+    return view('layouts.app', ['judul' => 'User']);
+});
+
 
 

@@ -42,6 +42,16 @@
     {{-- about us css --}}
     <link rel="stylesheet" href="./about/css/style-about.css">
 
+        @elseif ($judul == 'About Us')
+    {{-- user css --}}
+ <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css"
+        type="text/css">
+
+@elseif ($judul == 'User')
+            <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css"
+        type="text/css">
     @endif
 
 
@@ -65,7 +75,7 @@ assets/owl.carousel.min.css">
             <a href="/" class="list active">Home Page</a>
             <a href="/courses" class="list">Promers Course</a>
             <a href="/aboutus" class="list">About Us</a>
-            <a href="#" class="list">User Profile</a>
+            <a href="/user" class="list">User Profile</a>
         </div>
         <div class="btn-nav">
             <a href="/login-register" class="login">Login</a>
